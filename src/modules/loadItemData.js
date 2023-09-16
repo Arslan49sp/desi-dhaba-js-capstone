@@ -1,9 +1,9 @@
-import fecthingItem from "./fetchingItem.js";
+import fecthingItem from './fetchingItem.js';
 
 const loadAllCard = async () => {
   const ids = [
-    53027, 52963, 53026, 53029, 53065, 52858, 52913, 52786, 53000, 52930, 52903,
-    53059,
+    53011, 53022, 53033, 53044, 53055, 52866, 52977, 52788, 53011, 52933, 52905,
+    53056,
   ];
 
   const array = await Promise.all(ids.map(async (id) => fecthingItem(id)));
