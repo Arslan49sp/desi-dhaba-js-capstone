@@ -1,14 +1,15 @@
-import com from './showComments.js';
-import postComments from './postComments.js';
+import com from "./showComments.js";
+import postComments from "./postComments.js";
+import { loadtotalcomments } from "./loadTotalComments.js";
 
 const display = (items) => {
-  const COMMENTS = document.querySelectorAll('.comment');
+  const COMMENTS = document.querySelectorAll(".comment");
   COMMENTS.forEach((comment) => {
-    comment.addEventListener('click', () => {
-      const id = comment.getAttribute('data-id');
+    comment.addEventListener("click", () => {
+      const id = comment.getAttribute("data-id");
       const item = items.find((o) => o.idMeal === id);
-      const parmodal = document.querySelector('.parmodal');
-      parmodal.style.display = 'grid';
+      const parmodal = document.querySelector(".parmodal");
+      parmodal.style.display = "grid";
       parmodal.innerHTML = `
               <div class="parmodal__modal">
                 <div class="front"><button id="close" class="close">&times;</button></div>
@@ -48,16 +49,16 @@ const display = (items) => {
                 </div>
               </div>
             `;
-      const close = document.querySelector('#close');
-      close.addEventListener('click', () => {
-        parmodal.style.display = 'none';
+      const close = document.querySelector("#close");
+      close.addEventListener("click", () => {
+        parmodal.style.display = "none";
       });
       com(id);
 
-      const Name = document.querySelector('#name');
-      const Textarea = document.querySelector('#textarea');
-      const submit = document.querySelector('#submit');
-      submit.addEventListener('click', (e) => {
+      const Name = document.querySelector("#name");
+      const Textarea = document.querySelector("#textarea");
+      const submit = document.querySelector("#submit");
+      submit.addEventListener("click", (e) => {
         e.preventDefault();
         postComments({
           item_id: id,
@@ -66,6 +67,7 @@ const display = (items) => {
         }).then((res) => {
           if (res.status === 201) {
             com(id);
+            loadtotalcomments(id);
           }
         });
       });
