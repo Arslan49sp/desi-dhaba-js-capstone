@@ -1,4 +1,4 @@
-// import addLikes from "./addLikesFunction.js";
+import addLikes from './addLikesFunction.js';
 // import display from "./display.js";
 
 const loadItemCard = (items) => {
@@ -21,6 +21,14 @@ const loadItemCard = (items) => {
             `;
   }
   container.innerHTML = items.map((item) => card(item)).join('');
+  const likeButtons = document.querySelectorAll('.like-button');
+
+  likeButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-id');
+      addLikes(id);
+    });
+  });
   // display(items);
 };
 
