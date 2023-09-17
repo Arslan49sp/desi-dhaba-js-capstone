@@ -1,4 +1,5 @@
 import com from './showComments.js';
+import postComments from './postComments.js';
 
 const display = (items) => {
   const COMMENTS = document.querySelectorAll('.comment');
@@ -52,6 +53,22 @@ const display = (items) => {
         parmodal.style.display = 'none';
       });
       com(id);
+
+      const Name = document.querySelector('#name');
+      const Textarea = document.querySelector('#textarea');
+      const submit = document.querySelector('#submit');
+      submit.addEventListener('click', (e) => {
+        e.preventDefault();
+        postComments({
+          item_id: id,
+          username: Name.value,
+          comment: Textarea.value,
+        }).then((res) => {
+          if (res.status === 201) {
+            com(id);
+          }
+        });
+      });
     });
   });
 };
