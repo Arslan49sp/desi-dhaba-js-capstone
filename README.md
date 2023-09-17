@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Presentation](#live-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -25,7 +26,7 @@
 
 # 📖 Desi Dhaba <a name="about-project"></a>
 
-This is website where you can see different traditional Pakistani dishes. You can like any dish, post commnets and read other peoples comments about a specific food dish. 
+This is website where you can see different traditional Pakistani dishes. You can like any dish, post commnets and read other peoples comments about a specific food dish.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,6 +51,14 @@ This is website where you can see different traditional Pakistani dishes. You ca
 <li>Like Dish</li>
 <li>Comment Dishes.</li>
 </ul>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE Presentation -->
+
+## 🚀 Live Presentation <a name="live-presentation"></a>
+
+- [Live Presentation Link](https://www.loom.com/share/ebf4c18270714c0abdcd95673e7c8033?sid=fdfb3fde-ac4f-4720-9fd1-fb6570d2c53e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
