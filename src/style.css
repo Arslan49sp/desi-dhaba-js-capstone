@@ -232,9 +232,9 @@ section[data-visible="false"] {
 }
 
 footer {
+  display: grid;
   background-color: var(--accent-color);
   padding: 15px;
-  display: none;
 }
 
 footer .last {
@@ -386,5 +386,9 @@ footer .last > div:nth-child(2) {
 
   .footer .last > div:nth-child(2) {
     width: auto;
+  }
+
+  #footer {
+    display: grid;
   }
 }
