@@ -123,11 +123,12 @@ section[data-visible="false"] {
 }
 
 .card-button:hover {
-  background-color: color-mix(
-    in sRGB,
-    var(--background-color) 70%,
-    var(--accent-color)
-  );
+  background-color:
+    color-mix(
+      in sRGB,
+      var(--background-color) 70%,
+      var(--accent-color)
+    );
   cursor: pointer;
   color: #fff;
 }

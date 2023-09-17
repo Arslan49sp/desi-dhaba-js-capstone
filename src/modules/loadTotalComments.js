@@ -1,4 +1,5 @@
-import getComments from "./getcomments.js";
+import getComments from './getcomments.js';
+
 export const loadtotalcomments = async (id) => {
   const comment = await getComments(id);
 
