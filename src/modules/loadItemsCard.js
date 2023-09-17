@@ -1,5 +1,5 @@
 import addLikes from './addLikesFunction.js';
-// import display from "./display.js";
+import display from './commentPopup.js';
 
 const loadItemCard = (items) => {
   const container = document.querySelector('.home-wrapper');
@@ -29,7 +29,7 @@ const loadItemCard = (items) => {
       addLikes(id);
     });
   });
-  // display(items);
+  display(items);
 };
 
 export default loadItemCard;
