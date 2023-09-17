@@ -1,3 +1,5 @@
+import com from './showComments.js';
+
 const display = (items) => {
   const COMMENTS = document.querySelectorAll('.comment');
   COMMENTS.forEach((comment) => {
@@ -49,6 +51,7 @@ const display = (items) => {
       close.addEventListener('click', () => {
         parmodal.style.display = 'none';
       });
+      com(id);
     });
   });
 };
