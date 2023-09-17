@@ -1,8 +1,8 @@
-import addLikes from './addLikesFunction.js';
-// import display from "./display.js";
+import addLikes from "./addLikesFunction.js";
+import display from "./commentPopup.js";
 
 const loadItemCard = (items) => {
-  const container = document.querySelector('.home-wrapper');
+  const container = document.querySelector(".home-wrapper");
 
   function card(item) {
     return `<div class="card small-rounded">
@@ -20,16 +20,16 @@ const loadItemCard = (items) => {
             </div>
             `;
   }
-  container.innerHTML = items.map((item) => card(item)).join('');
-  const likeButtons = document.querySelectorAll('.like-button');
+  container.innerHTML = items.map((item) => card(item)).join("");
+  const likeButtons = document.querySelectorAll(".like-button");
 
   likeButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const id = btn.getAttribute('data-id');
+    btn.addEventListener("click", () => {
+      const id = btn.getAttribute("data-id");
       addLikes(id);
     });
   });
-  // display(items);
+  display(items);
 };
 
 export default loadItemCard;
