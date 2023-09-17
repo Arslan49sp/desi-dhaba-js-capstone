@@ -1,5 +1,5 @@
-import getLikeItems from "./getLikeItems.js";
-import loadAllCard from "./loadItemData.js";
+import getLikeItems from './getLikeItems.js';
+import loadAllCard from './loadItemData.js';
 
 export const loadLikes = async () => {
   const likes = await getLikeItems();
