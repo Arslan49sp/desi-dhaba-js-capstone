@@ -25,7 +25,7 @@
 
 # 📖 Desi Dhaba <a name="about-project"></a>
 
-This is a simple but useful project where user can add and remove his/her todo tasks. It maintains those tasks in the assending order. User can also mark and complete the completed tasks.
+This is website where you can see different traditional Pakistani dishes. You can like any dish, post commnets and read other peoples comments about a specific food dish. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,9 +46,9 @@ This is a simple but useful project where user can add and remove his/her todo t
 ### Key Features <a name="key-features"></a>
 
 <ul>
-<li>Add todo</li>
-<li>View all todo</li>
-<li>Remove completed todo.</li>
+<li>Collect Dishes</li>
+<li>Like Dish</li>
+<li>Comment Dishes.</li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -75,7 +75,7 @@ In order to run this project you need
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:Arslan49sp/todo-list-es6.git
+  git clone git@github.com:Arslan49sp/desi-dhaba-js-capstone.git
 ```
 
 ### Install
@@ -116,7 +116,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Drag and drop functionality**
+- [ ] **Make it more responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
