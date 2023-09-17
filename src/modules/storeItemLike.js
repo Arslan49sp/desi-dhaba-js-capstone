@@ -1,10 +1,10 @@
-import APPS_ID from "./env.js";
-const url = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${APPS_ID}/likes/`;
+import INV_URL from './env.js';
+
 const storeItemLike = async (input) => {
-  const response = await fetch(url, {
-    method: "POST",
+  const response = await fetch(INV_URL, {
+    method: 'POST',
     headers: {
-      "Content-Type": " application/json",
+      'Content-Type': ' application/json',
     },
     body: JSON.stringify(input),
   });
