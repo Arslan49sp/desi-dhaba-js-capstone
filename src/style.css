@@ -123,11 +123,12 @@ section[data-visible="false"] {
 }
 
 .card-button:hover {
-  background-color: color-mix(
-    in sRGB,
-    var(--background-color) 70%,
-    var(--accent-color)
-  );
+  background-color:
+    color-mix(
+      in sRGB,
+      var(--background-color) 70%,
+      var(--accent-color)
+    );
   cursor: pointer;
   color: #fff;
 }
@@ -231,9 +232,9 @@ section[data-visible="false"] {
 }
 
 footer {
+  display: grid;
   background-color: var(--accent-color);
   padding: 15px;
-  display: none;
 }
 
 footer .last {
@@ -385,5 +386,9 @@ footer .last > div:nth-child(2) {
 
   .footer .last > div:nth-child(2) {
     width: auto;
+  }
+
+  #footer {
+    display: grid;
   }
 }
