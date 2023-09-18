@@ -5,7 +5,7 @@
   --text-color: #1f220c;
   --primary-color: #ffd857;
   --secondary-color: #9cd37e;
-  --accent-color: #13303e;
+  --accent-color: #58b225;
 }
 
 body {
@@ -33,10 +33,6 @@ h1 {
 .about-section,
 .meals-section {
   height: 70vh;
-}
-
-.desktop-nav-list {
-  display: none;
 }
 
 a {
@@ -123,14 +119,10 @@ section[data-visible="false"] {
 }
 
 .card-button:hover {
-  background-color:
-    color-mix(
-      in sRGB,
-      var(--background-color) 70%,
-      var(--accent-color)
-    );
+  background-color: var(--accent-color);
   cursor: pointer;
   color: #fff;
+  border: 1px solid white;
 }
 
 .responsive {
@@ -369,26 +361,4 @@ footer .last > div:nth-child(2) {
   row-gap: 20px;
   width: 100%;
   column-gap: 50px;
-}
-
-@media only screen and (max-width: 768px) {
-  .parmodal__modal {
-    width: auto;
-  }
-
-  .parmodal__modal__details {
-    grid-template-columns: 1fr 1fr;
-    gap: 26px;
-    display: flex;
-    flex-direction: column;
-    width: 290px;
-  }
-
-  .footer .last > div:nth-child(2) {
-    width: auto;
-  }
-
-  #footer {
-    display: grid;
-  }
 }
